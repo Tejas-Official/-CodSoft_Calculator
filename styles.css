@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
+}
+
+.calculator {
+    background: linear-gradient(135deg, #ff6b6b, #556270);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    padding: 30px;
+    width: 350px;
+}
+
+.display {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 2.5em;
+    grid-column: span 4;
+    padding: 20px;
+    text-align: right;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #333;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.button-ac {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: #fff;
+}
+
+.button-ac:hover {
+    background: linear-gradient(135deg, #ff9f00, #e83e8c);
+}
+
+.button-equal {
+    background: linear-gradient(135deg, #1a2980, #26d0ce);
+    color: #fff;
+}
+
+.button-equal:hover {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+}
